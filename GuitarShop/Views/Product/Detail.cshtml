@@ -1,0 +1,23 @@
+﻿@model Product
+@{
+    ViewBag.Title = "Product Detail";
+}
+<h1>CIS 236</h1>
+<p>Inserted paragraph</p>
+<table class="table table-bordered table-striped">
+    <tr>
+        <td>ID</td>
+        <td>@Model.ProductID</td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <td>Price</td>
+        <td>@Model.Price.ToString("C2")</td>
+    </tr>
+</table>
+<h1>Above are our items</h1>
+<a asp-controller="Home" asp-action="Index"
+   class="btn btn-primary">Home</a>
